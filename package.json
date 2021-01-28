@@ -1,0 +1,25 @@
+{
+  "name": "file-uploader-wc",
+  "version": "1.0.0",
+  "description": "A web component that replaces the input type file",
+  "main": "file-upload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnoor/file-uploader.git"
+  },
+  "keywords": [
+    "HTML5",
+    "File",
+    "Upload",
+    "Component"
+  ],
+  "author": "Vishnoo Rath4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vishnoor/file-uploader/issues"
+  },
+  "homepage": "https://github.com/vishnoor/file-uploader#readme"
+}

@@ -28,3 +28,7 @@ If a new file is chosen then it displays the name of the new file. The ***href**
 
 <u>Note: This component does not use shadow DOM as the file input is not submitted with the containing form</u>
 
+# Demo
+
+This [link](./fileUploadTest.htm) shows the demo page.
+
