@@ -1,1 +1,26 @@
-<div class="container"># File Upload Control<div class="card">HTML5 File upload control does not allow you to show the name of the file in it. This is a custom webcontrol that overcomes this limitation.</div><form method="POST" enctype="multipart/form-data"><div class="row"><file-uploader buttontext="Choose Profile" controlname="profilePicture" textcontrolid="txtProfileFileName">[Initial DB Filename.docx](/contextPath/documents/view/22)</file-uploader></div><div class="row"><button type="submit" class="btn btn-success">Dummy Submit</button></div></form># Usage<div class="card">##### 1\. Include this script in your base layout / layour master  <div>`<script src="file-upload.js"></script>`</div>##### 2\. Use the tag and pass the three attibute values  <div>`<file-uploader buttonText="Choose Profile" controlName="profilePicture" textControlId="txtProfileFileName">      <a href="/contextPath/documents/view/22" id="txtProfileFileName">Initial DB Filename.docx</a>  </file-uploader>`  a. buttonText - text to show in the button  b. controlName - name of the input file control that will be submitted to server.  c. textControlId - the Id of the control (mostly the anchor tag within the file-uploader control)</div><div>If a new file is chosen then it displays the name of the new file. The href property is set to "#" as the link would no longer be valid.</div></div></div>
+# File Upload Control
+
+HTML5 File upload control does not allow you to show the name of the file in it. This is a custom WebComponent that overcomes this limitation.
+
+![image-20210128185732552](image-20210128185732552.png)
+
+# Usage
+
+##### 1. Include this script in your base layout / layout master 
+
+<script src="file-upload.js"></script>
+
+##### 2. Use the tag and pass the three attribute values 
+
+```html
+<file-uploader buttonText="Choose Profile" controlName="profilePicture" textControlId="txtProfileFileName">  
+    <a href="/contextPath/documents/view/22" id="txtProfileFileName">Initial DB Filename.docx</a>
+</file-uploader>
+```
+
+1.  *buttonText* - Text to show in the button
+2.  *controlName* - name of the input file control that will be submitted to server.
+3.  *textControlId* - The Id of the control (mostly the anchor tag within the file-uploader control)
+
+If a new file is chosen then it displays the name of the new file. The ***href*** property is set to "#" as the link would no longer be valid.
+
