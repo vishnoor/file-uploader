@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="file-upload.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>AASHDIT File Upload Control </h1><br/>
+			<div class="card">
+				HTML5 File upload control does not allow you to show the name of the file in it. This is a custom webcontrol that
+				overcomes this limitation.
+			</div>
+			<br/>
+			<form method="POST" enctype="multipart/form-data">
+
+				<div class="row">
+					<file-uploader buttonText="Choose Profile" controlName="profilePicture" textControlId="txtProfileFileName">
+						<a href="/contextPath/documents/view/22" id="txtProfileFileName">Initial DB Filename.docx</a>
+					</file-uploader>
+				</div>
+				<br/><br/>
+				<div class="row">
+					<button type="submit" class="btn btn-success">Dummy Submit</button>
+				</div>
+			</form>
+			<br/><br/>
+			<h1>Usage </h1>
+			<div class="card">
+				<h5>
+					1. Include this script in your base layout / layour master <br/>
+				</h5>
+				<div>
+					<code>&lt;script src="file-upload.js"&gt;&lt;/script&gt;</code>
+				</div>
+				<h5>
+					2. Use the tag and pass the three attibute values<br/>
+				</h5>
+				<div>
+					<code>&lt;file-uploader buttonText="Choose Profile" controlName="profilePicture" textControlId="txtProfileFileName"&gt;
+					<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/contextPath/documents/view/22" id="txtProfileFileName"&gt;Initial DB Filename.docx&lt;/a&gt;
+					<br/>
+					&lt;/file-uploader&gt;</code>
+					<br/>
+					a. buttonText - text to show in the button <br/>
+					b. controlName - name of the input file control that will be submitted to server. <br/>
+					c. textControlId - the Id of the control (mostly the anchor tag within the file-uploader control)
+				</div>
+				<br/>
+				<div>
+					If a new file is chosen then it displays the name of the new file. The href property is set to "#" as the link would no longer be valid.
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
