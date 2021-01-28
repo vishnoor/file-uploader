@@ -12,8 +12,6 @@ HTML5 File upload control does not allow you to show the name of the file in it.
 <script src="file-upload.js"></script>
 ```
 
-#####  <script src="file-upload.js"></script>
-
 ##### 2. Use the tag and pass the three attribute values 
 
 ```html
